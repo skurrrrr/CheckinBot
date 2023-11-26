@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#tells me the IP address every 30 minutes.
 
-curl api.ipify.org | notify;
-sleep 60
+while true;
+    do curl api.ipify.org | notify;
+    sleep 1800;
+done
